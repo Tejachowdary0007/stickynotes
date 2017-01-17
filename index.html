@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sticky Notes </title>
+        <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20452628-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    <script src="notes.js"></script>
+    <link rel="stylesheet" type="text/css" href="notes.css" />
+    <style>
+      html { background:url('background-hd.jpg'); }
+      a {text-decoration: underline; padding:2px; margin-top:5px; margin-bottom:5px; }
+      a:link { color: #FFF046; }
+      a:visited { color: #FFF046; }
+      a:hover { color: #FFF046; background-color: #262626; text-decoration: none; }
+      #stuffIWorkedOn a {text-decoration: underline; padding:2px; margin-top:5px; margin-bottom:5px; }
+      #stuffIWorkedOn a:link { color: #262626; }
+      #stuffIWorkedOn a:visited { color: #262626; }
+      #stuffIWorkedOn a:hover { color: #eee; background-color: #262626; }
+      .new-note {
+		background: rgba(0, 0, 0, 0.55);
+		display: inline-block;
+		color: white;
+		font: bold 18px Arial,Helvetica,sans-serif;
+		text-shadow: 1px 1px 0 #515760;
+		line-height: 19px;
+		text-decoration: none;
+		padding: 8px 20px;
+		-webkit-border-radius: 25px;
+		-moz-border-radius: 25px;
+		border-radius: 25px;
+		outline: 0;
+		outline-style: none;
+		outline-width: 0;
+		-moz-outline-width: 0;
+		cursor:pointer;
+      }
+    </style>
+    <script type="text/javascript">
+      function showStuff() {
+	      var stuff = "<div id='stuffIWorkedOn'><div class='paragraph_style'>Stuff I worked on:<br></div><div class='paragraph_style_1'><br><br><br><center>WEB APPS</center></br></br></br><br></div><ol>  <li style='line-height: 22px; padding-left: 0px; text-indent: 0px; ' class='full-width'></a><br></div></div>";
+	      var n = newNote();
+		  n.text = stuff;
+		  n.editField.contentEditable=false;
+      }
+    </script>
+  </head>
+  <body>
+	<a href="https://github.com/Tejachowdary0007"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/connectme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <a onclick="newNote();" class="new-note">New Note</a>
+    <div id="bookmarklet_arrow" style="position: absolute; top: 0px; left: 70px; display:none; width: 159px; height: 207px; background-image: url('arrow.png'); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; z-index: 150; background-position: 0% 0%; background-repeat: no-repeat no-repeat; " ></div>
+    <div style="position:absolute;top:160px;">
+      <div style="color:#eee;font-size:22px;">Drag to Bookmark Bar to:</div>
+      <a href="javascript:window.CREATE_NEW_NOTE=true;window.LOAD_ALL=false;var%20isLoaded=false;var%20scripts=document.getElementsByTagName('script');for(var%20i=0;i%3Cscripts.length;i++){if(scripts[i].src=='http://www.se.rit.edu/~agp2572/Notes/NotesStartup.js'){isLoaded=true;}}if(!isLoaded){var%20b=document.body;var%20h=document.getElementsByTagName('head')[0];if(b%20&&%20!document.xmlVersion){void(z=document.createElement('script'));void(z.src='http://www.se.rit.edu/~agp2572/Notes/NotesStartup.js');void(h.appendChild(z));}}else{newNote()}"
+	 onmouseover="document.getElementById('bookmarklet_arrow').style.display='';" 
+	 onmouseout="document.getElementById('bookmarklet_arrow').style.display='none'">
+	Create Notes</a><br/>
+      <a href="javascript:window.CREATE_NEW_NOTE=false;window.LOAD_ALL=false;var%20isLoaded=false;var%20scripts=document.getElementsByTagName('script');for(var%20i=0;i%3Cscripts.length;i++){if(scripts[i].src=='http://www.se.rit.edu/~agp2572/Notes/NotesStartup.js'){isLoaded=true;}}if(!isLoaded){var%20b=document.body;var%20h=document.getElementsByTagName('head')[0];if(b%20&&%20!document.xmlVersion){void(z=document.createElement('script'));void(z.src='http://www.se.rit.edu/~agp2572/Notes/NotesStartup.js');void(h.appendChild(z));}}else{showAllNotes()}"
+	 onmouseover="document.getElementById('bookmarklet_arrow').style.display='';" 
+	 onmouseout="document.getElementById('bookmarklet_arrow').style.display='none'">
+	Show Notes</a>
+    </div><div class="container spacer">
+    <div class="row-fluid">
+	<div class="span12 well footer">
+        <div class="span4">
+            <p>&copy;; 2017 <a href="#">Ram Teja</a></p>
+        </div>
+        <div class="span8 text-center">
+          <a href="https://www.facebook.com/tejachowdary007"><img src="fb-icon.png"  class='socialmedia'/></a>			
+		  <a href="https://plus.google.com/115349512177580207189"><img src="gp-icon.png"  class='socialmedia'/></a>			
+		  <a href="https://in.linkedin.com/in/ramtejachilukuri"><img src="in-icon.png"  class='socialmedia'/></a>			
+		  <a href="https://twitter.com/Ramtejach"><img src="tw-icon.png"  class='socialmedia'/></a>			
+		  <a href="https://www.youtube.com/channel/UCoH9yEKM_lSLz8kAhYAUAWQ"><img src="yt-icon.png"  class='socialmedia'/></a>			
+           <a href="http://vsco.co/myfriendsmylife"><img src="vsco.png"  class='socialmedia'/></a>			
+        </div>
+		</div>
+    </div>
+</div>
+    <div style="color:white;margin:20px;right:0px;position:absolute;bottom:0px">
+      Like this? Click <a href="javascript:showStuff();">here</a> to check out other cool stuff by <a href=""https://github.com/Tejachowdary0007"">@ramtejachilukuri</a>
+    </div></div>
+</div>
+<div class="container spacer">
+    <div class="row-fluid">
+	<div class="span12 well footer">
+        <div class="span4">
+  </body>
+</html>
